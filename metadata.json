@@ -1,0 +1,16 @@
+{
+  "name": "cesnet-pig",
+  "version": "0.1.0",
+  "author": "CESNET",
+  "summary": "Pig Setup",
+  "license": "Apache 2.0",
+  "source": "http://scientific.zcu.cz/git/cesnet-pig.git",
+  "project_page": "scientific.zcu.cz",
+  "issues_url": "mailto://valtri@civ.zcu.cz",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ]
+}
