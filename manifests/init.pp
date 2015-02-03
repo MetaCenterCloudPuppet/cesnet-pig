@@ -4,7 +4,6 @@
 #
 class pig () inherits pig::params {
   class { 'pig::install': } ->
-  class { 'pig::config': } ~>
-  class { 'pig::service': } ->
+  class { 'pig::config': } ->
   Class['pig']
 }
