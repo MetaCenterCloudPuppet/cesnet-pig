@@ -1,12 +1,12 @@
 {
   "name": "cesnet-pig",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "author": "Frantisek Dvorak <valtri@civ.zcu.cz>",
   "summary": "Pig Setup",
   "license": "MIT",
-  "source": "http://scientific.zcu.cz/git/cesnet-pig.git",
-  "project_page": "scientific.zcu.cz",
-  "issues_url": "mailto://valtri@civ.zcu.cz",
+  "source": "https://github.com/MetaCenterCloudPuppet/cesnet-pig",
+  "project_page": "https://github.com/MetaCenterCloudPuppet",
+  "issues_url": "https://github.com/MetaCenterCloudPuppet/cesnet-pig/issues",
   "tags": ["hadoop", "pig"],
   "operatingsystem_support": [
     {
