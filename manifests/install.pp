@@ -17,4 +17,8 @@ class pig::install {
 
     Package[$pig::package_name] -> File['/usr/share/pig/bin/pig']
   }
+
+  if $pig::datafu_enabled {
+    ensure_packages($pig::package_datafu)
+  }
 }

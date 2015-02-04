@@ -9,6 +9,7 @@
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
     * [Classes](#classes)
+    * [Module Parameters](#parameters)
 6. [Development - Guide for contributing to the module](#development)
 
 <a name="overview"></a>
@@ -60,6 +61,15 @@ Pig can be launched locally this way:
 
     pig -x local
 
+Use Pig with HBase: add following to the pig scripts (replace *<ZooKeeper_version>* and *<HBase_version>* by current values):
+
+    register /usr/lib/zookeeper/zookeeper-<ZooKeeper_version>.jar
+    register /usr/lib/hbase/hbase-<HBase_version>-security.jar
+
+Use Pig with DataFu: add following to the pig scripts (replace *<DataFu_version>* by current value):
+
+    REGISTER /usr/lib/pig/datafu-<DataFu_version>.jar
+
 <a name="classes"></a>
 ###Classes
 
@@ -67,6 +77,13 @@ Pig can be launched locally this way:
 * init
 * install
 * params
+
+<a name="parameters"></a>
+###Module Parameters
+
+####`datafu_enabled` true
+
+Install also Pig User-Defined Functions collection.
 
 <a name="development"></a>
 ##Development
