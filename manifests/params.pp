@@ -26,4 +26,12 @@ class pig::params {
     },
     default => false,
   }
+
+  $mapred_home = $::osfamily ? {
+    'RedHat' => $::operatingsystem ? {
+      'Fedora' => undef,
+      default => '/usr/lib/hadoop-mapreduce',
+    },
+    default => '/usr/lib/hadoop-mapreduce',
+  }
 }
