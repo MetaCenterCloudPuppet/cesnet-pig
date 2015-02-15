@@ -1,0 +1,10 @@
+name 'cesnet-hadoop'
+version '0.9.0'
+source 'https://github.com/MetaCenterCloudPuppet/cesnet-pig'
+author 'Frantisek Dvorak <valtri@civ.zcu.cz>'
+license 'MIT'
+summary 'Pig Setup'
+description 'Pig Setup'
+project_page 'https://github.com/MetaCenterCloudPuppet'
+
+dependency 'puppetlabs/stdlib', '>= 1.0.0'
