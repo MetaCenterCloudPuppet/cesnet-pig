@@ -1,6 +1,6 @@
 {
   "name": "cesnet-pig",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "author": "Frantisek Dvorak <valtri@civ.zcu.cz>",
   "summary": "Pig Setup",
   "license": "MIT",
