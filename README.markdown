@@ -26,6 +26,7 @@ Supported are:
 
 * Fedora 21: native packages (tested on Pig 0.13.0)
 * Debian 7/wheezy: Cloudera distribution (tested on Pig 0.12.0)
+* Ubuntu 14/trusty: Cloudera distribution (tested on Pig 0.12.0)
 
 <a name="setup"></a>
 ##Setup

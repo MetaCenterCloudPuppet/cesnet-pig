@@ -14,7 +14,7 @@ class pig::params {
       $package_datafu = 'pig-udf-datafu'
     }
     default: {
-      fail("${::operatingsystem} not supported")
+      fail("${::osfamily}/${::operatingsystem} not supported")
     }
   }
 
