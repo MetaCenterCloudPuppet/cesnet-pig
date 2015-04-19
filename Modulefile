@@ -7,4 +7,4 @@ summary 'Pig Setup'
 description 'Pig Setup'
 project_page 'https://github.com/MetaCenterCloudPuppet'
 
-dependency 'puppetlabs/stdlib', '>= 1.0.0'
+dependency 'puppetlabs/stdlib', '>= 1.0.0 <5.0.0'
