@@ -1,5 +1,5 @@
 name 'cesnet-pig'
-version '0.9.1'
+version '0.9.2'
 source 'https://github.com/MetaCenterCloudPuppet/cesnet-pig'
 author 'Frantisek Dvorak <valtri@civ.zcu.cz>'
 license 'MIT'
