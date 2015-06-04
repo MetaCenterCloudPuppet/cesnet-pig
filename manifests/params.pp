@@ -4,34 +4,33 @@
 # It sets variables according to platform
 #
 class pig::params {
-  case $::osfamily {
-    'Debian': {
-      $package_name = 'pig'
-      $package_datafu = 'pig-udf-datafu'
+  case "${::osfamily}-${::operatingsystem}" {
+    /RedHat-Fedora/: {
+      $package = {
+        pig => 'pig',
+        datafu => undef,
+      }
     }
-    'RedHat': {
-      $package_name = 'pig'
-      $package_datafu = 'pig-udf-datafu'
+    /Debian|RedHat/: {
+      $package = {
+        pig => 'pig',
+        datafu => 'pig-udf-datafu',
+      }
     }
     default: {
       fail("${::osfamily}/${::operatingsystem} not supported")
     }
   }
 
-  $datafu_enabled = $::osfamily ? {
-    'Debian' => true,
-    'RedHat' => $::operatingsystem ? {
-      'Fedora' => false,
-      default => true
-    },
-    default => false,
+  $datafu_enabled = "${::osfamily}-${::operatingsystem}" ? {
+    /RedHat-Fedora/ => false,
+    /Debian|RedHat/ => true,
+    default         => false,
   }
 
-  $mapred_home = $::osfamily ? {
-    'RedHat' => $::operatingsystem ? {
-      'Fedora' => undef,
-      default => '/usr/lib/hadoop-mapreduce',
-    },
-    default => '/usr/lib/hadoop-mapreduce',
+  $mapred_home = "${::osfamily}-${::operatingsystem}" ? {
+    /RedHat-Fedora/ => undef,
+    /Debian|RedHat/ => '/usr/lib/hadoop-mapreduce',
+    default         => '/usr/lib/hadoop-mapreduce',
   }
 }

@@ -7,11 +7,19 @@ $test_os=[{
     'operatingsystem' => 'Debian',
     'operatingsystemrelease' => ['7']
   }, {
-    'osfamily' => 'Redhat',
-    'operatingsystem' => 'Fedora',
-    'operatingsystemrelease' => ['21']
-  }, {
     'osfamily' => 'Debian',
     'operatingsystem' => 'Ubuntu',
     'operatingsystemrelease' => ['14.04']
+  }, {
+    'osfamily' => 'RedHat',
+    'operatingsystem' => 'RedHat',
+    'operatingsystemrelease' => ['6']
+  }, {
+    'osfamily' => 'RedHat',
+    'operatingsystem' => 'CentOS',
+    'operatingsystemrelease' => ['6']
+  }, {
+    'osfamily' => 'RedHat',
+    'operatingsystem' => 'Fedora',
+    'operatingsystemrelease' => ['21']
   }]

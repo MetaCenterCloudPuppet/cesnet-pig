@@ -25,8 +25,9 @@ This module installs Apacha Pig - platform for analyzing large data sets. By def
 Supported are:
 
 * Fedora 21: native packages (tested on Pig 0.13.0)
-* Debian 7/wheezy: Cloudera distribution (tested on Pig 0.12.0)
-* Ubuntu 14/trusty: Cloudera distribution (tested on Pig 0.12.0)
+* Debian 7/wheezy: Cloudera distribution (tested on CDH 5.3.0, Pig 0.12.0)
+* Ubuntu 14/trusty: Cloudera distribution (tested on CDH 5.3.0, Pig 0.12.0)
+* RHEL 6, CentOS 6, Scientific Linux 6: Cloudera distribution (tested on CDH 5.4.2, Pig 0.12.0)
 
 <a name="setup"></a>
 ##Setup

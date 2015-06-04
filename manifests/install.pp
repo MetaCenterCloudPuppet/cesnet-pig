@@ -3,7 +3,7 @@
 class pig::install {
   include stdlib
 
-  ensure_packages($pig::package_name)
+  ensure_packages($pig::package['pig'])
 
   if $::osfamily == 'RedHat' and $::operatingsystem == 'Fedora' {
     # buggy pig on Fedora
@@ -15,10 +15,10 @@ class pig::install {
       source => 'puppet:///modules/pig/fedora-pig',
     }
 
-    Package[$pig::package_name] -> File['/usr/share/pig/bin/pig']
+    Package[$pig::package['pig']] -> File['/usr/share/pig/bin/pig']
   }
 
-  if $pig::datafu_enabled {
-    ensure_packages($pig::package_datafu)
+  if $pig::datafu_enabled == true and $pig::package['datafu'] {
+    ensure_packages($pig::package['datafu'])
   }
 }
