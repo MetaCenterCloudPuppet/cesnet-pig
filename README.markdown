@@ -1,3 +1,7 @@
+## Apache Pig Puppet Module
+
+[![Build Status](https://travis-ci.org/MetaCenterCloudPuppet/cesnet-pig.svg?branch=master)](https://travis-ci.org/MetaCenterCloudPuppet/cesnet-pig)
+
 ####Table of Contents
 
 1. [Overview](#overview)
