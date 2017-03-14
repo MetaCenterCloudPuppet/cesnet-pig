@@ -1,7 +1,7 @@
 # == Class pig::install
 #
 class pig::install {
-  include stdlib
+  include ::stdlib
 
   ensure_packages($pig::package['pig'])
 
