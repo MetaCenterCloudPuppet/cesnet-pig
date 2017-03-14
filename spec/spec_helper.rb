@@ -31,8 +31,4 @@ $test_os=[{
     'osfamily' => 'RedHat',
     'operatingsystem' => 'CentOS',
     'operatingsystemrelease' => ['6']
-  }, {
-    'osfamily' => 'RedHat',
-    'operatingsystem' => 'Fedora',
-    'operatingsystemrelease' => ['21']
   }]

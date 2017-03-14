@@ -22,7 +22,6 @@ This module installs Apache Pig - platform for analyzing large data sets. By def
 
 Supported are:
 
-* **Fedora 21**: native packages (tested on Pig 0.13.0)
 * **Debian 7/wheezy**: Cloudera distribution (tested on CDH 5.3.0, Pig 0.12.0)
 * **Ubuntu 14/trusty**: Cloudera distribution (tested on CDH 5.3.0, Pig 0.12.0)
 * **RHEL 6 and clones**: Cloudera distribution (tested on CDH 5.4.2, Pig 0.12.0)
@@ -42,7 +41,7 @@ Supported are:
 Be aware of:
 
 * **Hadoop repositories**
- * neither Cloudera nor Hortonworks repositories are configured in this module (for Cloudera you can find list and key files here: [http://archive.cloudera.com/cdh5/debian/wheezy/amd64/cdh/](http://archive.cloudera.com/cdh5/debian/wheezy/amd64/cdh/), Fedora has Hadoop as part of distribution, ...)
+ * neither Cloudera nor Hortonworks repositories are configured in this module (for Cloudera you can find list and key files here: [http://archive.cloudera.com/cdh5/debian/wheezy/amd64/cdh/](http://archive.cloudera.com/cdh5/debian/wheezy/amd64/cdh/), ...)
 
 <a name="beginning-with-pig"></a>
 ###Beginning with pig

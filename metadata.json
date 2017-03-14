@@ -18,10 +18,6 @@
       "operatingsystemrelease": ["7"]
     },
     {
-      "operatingsystem": "Fedora",
-      "operatingsystemrelease": ["21"]
-    },
-    {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": ["6"]
     },

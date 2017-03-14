@@ -5,12 +5,6 @@
 #
 class pig::params {
   case "${::osfamily}-${::operatingsystem}" {
-    /RedHat-Fedora/: {
-      $package = {
-        pig => 'pig',
-        datafu => undef,
-      }
-    }
     /Debian|RedHat/: {
       $package = {
         pig => 'pig',
@@ -23,13 +17,11 @@ class pig::params {
   }
 
   $datafu_enabled = "${::osfamily}-${::operatingsystem}" ? {
-    /RedHat-Fedora/ => false,
     /Debian|RedHat/ => true,
     default         => false,
   }
 
   $mapred_home = "${::osfamily}-${::operatingsystem}" ? {
-    /RedHat-Fedora/ => undef,
     /Debian|RedHat/ => '/usr/lib/hadoop-mapreduce',
     default         => '/usr/lib/hadoop-mapreduce',
   }
