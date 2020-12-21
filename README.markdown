@@ -87,7 +87,9 @@ Usage Pig with DataFu: add following to the pig scripts (replace *&lt;DataFu_ver
 
 ####`datafu_enabled`
 
-Install also Pig User-Defined Functions collection. Default: true.
+Install also Pig User-Defined Functions collection. Default: false.
+
+Default is false. The package is not available since CDH 6.
 
 <a name="development"></a>
 ##Development

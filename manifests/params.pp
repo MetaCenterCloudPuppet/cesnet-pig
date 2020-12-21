@@ -16,10 +16,7 @@ class pig::params {
     }
   }
 
-  $datafu_enabled = "${::osfamily}-${::operatingsystem}" ? {
-    /Debian|RedHat/ => true,
-    default         => false,
-  }
+  $datafu_enabled = false
 
   $mapred_home = "${::osfamily}-${::operatingsystem}" ? {
     /Debian|RedHat/ => '/usr/lib/hadoop-mapreduce',
